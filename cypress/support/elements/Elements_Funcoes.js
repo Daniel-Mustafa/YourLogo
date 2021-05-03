@@ -1,6 +1,7 @@
 class Elements_Funcoes {
    
 //Funções Básicas
+    Exception = () => { return 'uncaught:exception' }
     Contain = () => { return 'contain' }
     Be_Disabled = () => { return 'be.disabled' }
     Be_Enabled = () => { return 'be.enabled' }

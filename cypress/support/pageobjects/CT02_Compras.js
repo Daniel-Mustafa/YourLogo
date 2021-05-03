@@ -36,6 +36,5 @@ confirmar_Compras() {
 
     cy.get(elements_Compras.Orders()).click()
     }
-
-export default CT02_Compras;    
-
+}
+export default CT02_Compras;

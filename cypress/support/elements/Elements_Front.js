@@ -1,14 +1,13 @@
 class Elements_Compras {
     
 //Compra de uma Tshirt
-Women = () => { return 'ul.sf-menu li' }
-Tshirt = () => { return ':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span' }
-Compra_Tshirt = () => { return '.button-container > .button-medium > span' }
-Ok_Tshirt = () => { return '.icon-ok' }
-Confirma_Compra = () => { return '.cart_navigation > .button > span' }
-Checkbox = () => { return '#cgv' }
-Cartao = () => { return '.bankwire' }
-Orders = () => { return '.button-exclusive' }
+Portabilidade = () => { return 'ipad-2' }
+Pesquisar = () => { return 'form#searchbox' }
+Pesquisar_Campo = () => { return 'input[name=search_query]' }
+Pesquisa = () => { return "Printed" }
+Produto = () => { return 'a.product-name' }
+Tipo_Produto = () => { return 'Faded Short Sleeve T-shirts' }
+
 
 //Confirmação de Dados Pessoais
 Label_Nome = () => { return '#address_delivery > .address_firstname' }
