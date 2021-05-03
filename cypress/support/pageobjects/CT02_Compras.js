@@ -17,16 +17,25 @@ class CT02_Compras {
 //When 4.2- O Operador efetuar a compra de uma Tshirt
 Compra_Tshirt() {
     
-    cy.get(elements_Compras.Women()).click()
-    //cy.get(elements_Compras.Tshirt()).click()
-    }    
+    cy.get(elements_Compras.Women()).eq(0).click()
+    cy.get(elements_Compras.Tshirt()).click()
+    cy.get(elements_Compras.Ok_Tshirt()).should(elements_Funcoes.Exist())
+    cy.get(elements_Compras.Compra_Tshirt()).click()
+    cy.get(elements_Compras.Confirma_Compra()).click()
+    cy.get(elements_Compras.Label_Nome()).should(elements_Funcoes.Contain(), elements_Compras.Txt_Nome())
+    cy.get(elements_Compras.Confirma_Compra()).click()
+    cy.get(elements_Compras.Checkbox()).should(elements_Funcoes.Be_visible)
+    cy.get(elements_Compras.Checkbox()).check()
+    cy.get(elements_Compras.Confirma_Compra()).click()
+    cy.get(elements_Compras.Cartao()).click()
+    cy.get(elements_Compras.Confirma_Compra()).click()
+    }
 
-//validar_Erro_Usuario() {
-//    cy.get(elements_Login.Nome_Usuario()).should(elements_Funcoes.Not_Exist())
-//    cy.get(elements_Login.Alert_Danger()).should(elements_Funcoes.Exist())
-//    cy.get(elements_Login.Pega_Erro_Login()).should(elements_Funcoes.Contain(), elements_Login.Log_Error_Login())
-//    }    
-}
+//Then 4.3- O Operador poderá confirmar sua compra Finalizada   
+confirmar_Compras() {
+
+    cy.get(elements_Compras.Orders()).click()
+    }
 
 export default CT02_Compras;    
 
