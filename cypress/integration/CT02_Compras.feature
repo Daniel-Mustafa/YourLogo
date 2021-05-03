@@ -1,4 +1,4 @@
-Feature: Validações Login/Usuário
+Feature: Efetuando Compras
 
     Scenario: 4.0- Efetuar uma compra no YourLogo
     Given 4.1- O operador efetuou Login no site YourLogo
