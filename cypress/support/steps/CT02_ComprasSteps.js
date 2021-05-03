@@ -16,9 +16,8 @@ When("4.2- O Operador efetuar a compra de uma Tshirt", () => {
     cT02_Compras.Compra_Tshirt();
 })
 
-Then("1.3- O Operador verificará se o Usuário é Válido", () => {
-    cT02_Compras.validar_Usuario();
+Then("4.3- O Operador poderá confirmar sua compra Finalizada", () => {
+    cT02_Compras.confirmar_Compras();
 })
-
 
 
