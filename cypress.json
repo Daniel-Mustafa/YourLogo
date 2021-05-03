@@ -1,0 +1,14 @@
+{
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+    "defaultCommandTimeout": 10000,
+    "projectId": "xowqjc",
+    
+    "cypressHelper.cucumberTagsAutocomplete": {
+        "enable": true,
+        "allurePlugin": true,
+        "tags": ["focus", "someOtherTag"],
+
+         "env": {    "allureResultsPath": "../results"}
+    }   
+}

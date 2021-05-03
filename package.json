@@ -1,0 +1,27 @@
+{
+    "scripts": {
+        "test:chrome": "./node_modules/.bin/cypress open",
+        "cy": "cypress open",
+        "cyrun": "npx cypress run --env allure=true",
+        "cyrun2": "npx cypress run --config video=true --env allure=true",
+        "cyrun3": "npx cypress run --config video=false --env allure=true",
+        "gener": "allure generate allure-results",
+        "open": "allure open allure-report",
+        "rdgen": "rd allure-report",
+        "rdres": "rd allure-results",
+        "comp1": "npm run cyrun || npm run gener || npm run open",
+        "comp2": "npm run cyrun2 || npm run gener || npm run open",
+        "comp3": "npm run cyrun3 || npm run gener || npm run open"
+    },
+    "cypress-cucumber-preprocessor": {
+        "step_definitions": "cypress/support/steps"
+    },
+    "dependencies": {
+        "@shelex/cypress-allure-plugin": "^2.0.3",
+        "allure": "0.0.0"
+    },
+    "devDependencies": {
+        "cypress": "^6.9.1",
+        "cypress-cucumber-preprocessor": "^4.1.0"
+    }
+}
